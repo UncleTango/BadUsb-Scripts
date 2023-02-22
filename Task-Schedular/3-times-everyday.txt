@@ -1,1 +1,1 @@
-schtasks /create /tn "My Task" /tr "C:\path\to\my\batch\script.bat" /sc daily /st 10:00:00 /ri 8 /du 1 /ru SYSTEM
+schtasks /create /tn "My Task" /tr "C:\Users\%USERNAME%\AppData\Local\" /sc daily /st 10:00:00 /ri 8 /du 1 /ru SYSTEM
